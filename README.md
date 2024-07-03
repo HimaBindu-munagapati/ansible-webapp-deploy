@@ -97,20 +97,20 @@ After running the playbook, your web application should be deployed on the AWS E
 Open a web browser and navigate to the public IP address of your EC2 instance to see the deployed web application.
 
 http://<your-ec2-public-ip>
-Troubleshooting
-Common Issues
+## Troubleshooting
+**Common Issues**
 Nginx Not Running: Ensure Nginx is installed and running. Use sudo service nginx start to start Nginx.
 Firewall/Security Group: Ensure that the security group associated with your EC2 instance allows inbound traffic on port 80 (HTTP).
 Permission Issues: Ensure the Ansible user has the necessary permissions to access the EC2 instance and modify files.
-Logs
+## Logs
 Nginx Logs: Check the Nginx logs for errors.
 
 sudo tail -f /var/log/nginx/error.log
 System Logs: Check system logs for any other issues.
 
 sudo tail -f /var/log/syslog
-Contributing
+## Contributing
 If you would like to contribute to this project, please fork the repository and submit a pull request with your proposed changes.
 
-License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
